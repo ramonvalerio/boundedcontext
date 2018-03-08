@@ -5,7 +5,12 @@ namespace BoundedContext.NucleoCompartilhado.Infrastructure.IoC
 {
     public static class InjectorContainer
     {
-        private static SimpleInjector.Container _container = new SimpleInjector.Container();
+        private static SimpleInjector.Container _container;
+
+        static InjectorContainer()
+        {
+            _container = new SimpleInjector.Container();
+        }
 
         public static IEnumerable<IHandle<T>> GetAllEvents<T>() where T : IDomainEvent
         {

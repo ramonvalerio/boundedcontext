@@ -1,6 +1,6 @@
 ﻿using BoundedContext.NucleoCompartilhado.Domain.Model;
 
-namespace BoundedContext.ControleAcesso.Domain.Model
+namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
 {
     public class Usuario : AggregateRoot
     {

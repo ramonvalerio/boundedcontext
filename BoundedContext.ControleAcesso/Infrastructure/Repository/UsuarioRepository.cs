@@ -1,4 +1,4 @@
-﻿using BoundedContext.ControleAcesso.Domain.Model;
+﻿using BoundedContext.ControleAcesso.Domain.Model.Usuario;
 using BoundedContext.NucleoCompartilhado.Infrastructure.Repository;
 
 namespace BoundedContext.ControleAcesso.Infrastructure.Repository

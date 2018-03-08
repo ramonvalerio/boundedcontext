@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.ControleAcesso", "BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj", "{1052B019-CFD4-40E8-92B0-48E14EFB05CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.ControleAcesso", "BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj", "{1052B019-CFD4-40E8-92B0-48E14EFB05CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.NucleoCompartilhado", "BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj", "{2CFC8B48-30C2-4435-A86D-D2DB814240D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.NucleoCompartilhado", "BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj", "{2CFC8B48-30C2-4435-A86D-D2DB814240D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Vendas", "BoundedContext.Vendas\BoundedContext.Vendas.csproj", "{CD857DF2-7C9D-4C80-8FC7-4DF950AA488E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Vendas", "BoundedContext.Vendas\BoundedContext.Vendas.csproj", "{CD857DF2-7C9D-4C80-8FC7-4DF950AA488E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Presentation", "BoundedContext.Presentation\BoundedContext.Presentation.csproj", "{27A7CA61-D60A-463A-A7C6-B098057DF857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Presentation", "BoundedContext.Presentation\BoundedContext.Presentation.csproj", "{27A7CA61-D60A-463A-A7C6-B098057DF857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Estoque", "BoundedContext.Estoque\BoundedContext.Estoque.csproj", "{44A7D883-6830-45D3-BC26-F4D094F91D55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Estoque", "BoundedContext.Estoque\BoundedContext.Estoque.csproj", "{44A7D883-6830-45D3-BC26-F4D094F91D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.API", "BoundedContext.API\BoundedContext.API.csproj", "{B597E039-068B-47BF-85B2-8E30128F06F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.CQRS", "BoundedContext.CQRS\BoundedContext.CQRS.csproj", "{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{44A7D883-6830-45D3-BC26-F4D094F91D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44A7D883-6830-45D3-BC26-F4D094F91D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44A7D883-6830-45D3-BC26-F4D094F91D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B597E039-068B-47BF-85B2-8E30128F06F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B597E039-068B-47BF-85B2-8E30128F06F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B597E039-068B-47BF-85B2-8E30128F06F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B597E039-068B-47BF-85B2-8E30128F06F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

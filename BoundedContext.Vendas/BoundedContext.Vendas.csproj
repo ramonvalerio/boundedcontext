@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IronPython" Version="2.7.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj" />
     <ProjectReference Include="..\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
   </ItemGroup>

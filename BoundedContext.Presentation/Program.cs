@@ -11,11 +11,14 @@ namespace BoundedContext.Presentation
         {
             InjectorContainer.RegisterServices();
 
-            // Criar Evento
-            var produtoCadastrado = new ProdutoCadastrado(1);
+            // 1 - Criar Produto
+            var produto = new Produto(1);
 
-            // Realizando o evento
-            DomainEvents.Raise(produtoCadastrado); // Evento
+            // 2 - Criar Evento
+            var produtoCriado = new ProdutoCriado(produto);
+
+            // 3 - Notificando o evento
+            DomainEvents.Raise(produtoCriado);
 
             Console.WriteLine("Hello World!");
         }
