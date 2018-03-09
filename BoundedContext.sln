@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Presentation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Estoque", "BoundedContext.Estoque\BoundedContext.Estoque.csproj", "{44A7D883-6830-45D3-BC26-F4D094F91D55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.API", "BoundedContext.API\BoundedContext.API.csproj", "{B597E039-068B-47BF-85B2-8E30128F06F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.API", "BoundedContext.API\BoundedContext.API.csproj", "{B597E039-068B-47BF-85B2-8E30128F06F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.CQRS", "BoundedContext.CQRS\BoundedContext.CQRS.csproj", "{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.CQRS", "BoundedContext.CQRS\BoundedContext.CQRS.csproj", "{1E2281CB-A20A-47E0-A0DC-9BFDAE3E564C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

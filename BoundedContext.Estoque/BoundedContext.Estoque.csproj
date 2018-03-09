@@ -13,4 +13,9 @@
     <Folder Include="Domain\Events\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CoreCLR-NCalc" Version="2.1.3" />
+    <PackageReference Include="IronPython" Version="2.7.8.1" />
+  </ItemGroup>
+
 </Project>

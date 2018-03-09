@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BoundedContext.Vendas\BoundedContext.Vendas.csproj" />
+    <ProjectReference Include="..\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj" />
   </ItemGroup>
 
 </Project>
