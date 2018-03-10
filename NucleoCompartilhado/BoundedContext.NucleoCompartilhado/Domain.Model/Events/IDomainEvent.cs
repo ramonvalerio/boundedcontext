@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BoundedContext.NucleoCompartilhado.Domain.Events
+namespace BoundedContext.NucleoCompartilhado.Domain.Model.Events
 {
     public interface IDomainEvent
     {

@@ -1,4 +1,4 @@
-﻿using BoundedContext.NucleoCompartilhado.Domain.Events;
+﻿using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 using System;
 
 namespace BoundedContext.Vendas.Domain.Events

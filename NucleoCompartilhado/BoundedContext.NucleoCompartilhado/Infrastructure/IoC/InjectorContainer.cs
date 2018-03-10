@@ -1,4 +1,4 @@
-﻿using BoundedContext.NucleoCompartilhado.Domain.Events;
+﻿using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 using System.Collections.Generic;
 
 namespace BoundedContext.NucleoCompartilhado.Infrastructure.IoC
@@ -20,6 +20,8 @@ namespace BoundedContext.NucleoCompartilhado.Infrastructure.IoC
         public static void RegisterServices()
         {
             //_container.Register(aggregateRoot);
+
+            //_container.
         }
     }
 }

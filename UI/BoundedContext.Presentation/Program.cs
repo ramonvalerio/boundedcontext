@@ -1,5 +1,6 @@
 ﻿using BoundedContext.ControleAcesso.Domain.Model.Usuario;
-using BoundedContext.NucleoCompartilhado.Domain.Events;
+using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
+using BoundedContext.NucleoCompartilhado.Infrastructure.IoC;
 using System;
 
 namespace BoundedContext.Presentation
@@ -8,7 +9,7 @@ namespace BoundedContext.Presentation
     {
         static void Main(string[] args)
         {
-            //InjectorContainer.RegisterServices();
+            InjectorContainer.RegisterServices();
 
             // 1 - Criar Usuário
             var usuario = new Usuario { Id = 1, Email = "ramonvalerios@gmail.com", Senha = "123456" };

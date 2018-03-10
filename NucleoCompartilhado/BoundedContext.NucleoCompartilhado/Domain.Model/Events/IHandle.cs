@@ -1,4 +1,4 @@
-﻿namespace BoundedContext.NucleoCompartilhado.Domain.Events
+﻿namespace BoundedContext.NucleoCompartilhado.Domain.Model.Events
 {
     public interface IHandle<T> where T : IDomainEvent
     {
