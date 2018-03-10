@@ -9,5 +9,10 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
         public string Email { get; set; }
 
         public string Senha { get; set; }
+
+        public Usuario()
+        {
+
+        }
     }
 }

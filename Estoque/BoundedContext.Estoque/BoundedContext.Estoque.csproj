@@ -6,12 +6,17 @@
 
   <ItemGroup>
     <Folder Include="Application\" />
-    <Folder Include="Domain\Events\" />
+    <Folder Include="Infrastructure\Cache\" />
+    <Folder Include="Infrastructure\Repository\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CoreCLR-NCalc" Version="2.1.3" />
     <PackageReference Include="IronPython" Version="2.7.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
   </ItemGroup>
 
 </Project>
