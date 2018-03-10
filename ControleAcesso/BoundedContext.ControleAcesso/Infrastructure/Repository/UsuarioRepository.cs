@@ -5,6 +5,9 @@ namespace BoundedContext.ControleAcesso.Infrastructure.Repository
 {
     public class UsuarioRepository : Repository<Usuario>
     {
+        public UsuarioRepository()
+        {
 
+        }
     }
 }

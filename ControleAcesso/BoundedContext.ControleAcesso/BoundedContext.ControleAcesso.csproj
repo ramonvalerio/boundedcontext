@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
+    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
   </ItemGroup>
 
 </Project>

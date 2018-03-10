@@ -1,5 +1,4 @@
-﻿using BoundedContext.ControleAcesso.Domain.Events;
-using BoundedContext.NucleoCompartilhado.Domain.Events;
+﻿using BoundedContext.NucleoCompartilhado.Domain.Events;
 using System;
 
 namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
@@ -8,7 +7,7 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
     {
         public void Handle(UsuarioAutenticado args)
         {
-            Console.WriteLine("Usuário Autenticado.");
+            Console.WriteLine($"Usuário Autenticado em { args.DataOcorrida }.");
         }
     }
 }

@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="Domain\Events\" />
   </ItemGroup>
