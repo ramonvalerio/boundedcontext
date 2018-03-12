@@ -8,15 +8,16 @@ namespace BoundedContext.Presentation
     {
         static void Main(string[] args)
         {
-            InjectorContainer.RegisterServices();
+            InjectorContainer.InitIoC();
 
-            // 1 - Criar Usuário
-            var usuario = new Usuario { Id = 1, Email = "ramonvalerios@gmail.com", Senha = "123456" };
+            Console.WriteLine("Antes do evento!");
 
-            // 2 - Autenticar Usuário
-            usuario.Autenticar();
+            // Cria o usuário e dispara um evento printando o console com os dados do usuário
+            var usuario = Usuario.Criar("foo@gmail.com");
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Depois do evento!");
+
+            Console.ReadKey();
         }
     }
 }

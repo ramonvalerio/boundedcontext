@@ -3,16 +3,15 @@ using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 
 namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
 {
-    public class UsuarioAutenticado : IDomainEvent
+    public class UsuarioCriado : IDomainEvent
     {
         public Usuario Usuario { get; private set; }
+        public DateTime DataOcorreu { get; private set; }
 
-        public DateTime DataOcorreu { get; }
-
-        public UsuarioAutenticado(Usuario usuario)
+        public UsuarioCriado(Usuario usuario, DateTime dataOcorreu)
         {
             Usuario = usuario;
-            DataOcorreu = DateTime.Now;
+            DataOcorreu = dataOcorreu;
         }
     }
 }

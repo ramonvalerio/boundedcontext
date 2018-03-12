@@ -10,8 +10,12 @@ namespace BoundedContext.ControleAcesso.Teste.Domain.Model
         public void VerificarSeOUsuarioFoiAutenticado()
         {
             var usuario = new Usuario();
+            usuario.Email = "foo@gmail.com";
 
-            //DomainEvents.Register
+            var emailNotificado = "";
+
+            DomainEvents.Register<UsuarioAutenticado>(x => emailNotificado = x.Usuario.Email);
+
         }
     }
 }

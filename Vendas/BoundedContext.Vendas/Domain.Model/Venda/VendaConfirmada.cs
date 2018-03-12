@@ -13,7 +13,7 @@ namespace BoundedContext.Vendas.Domain.Events
 
         public int VersaoEvento => throw new NotImplementedException();
 
-        public DateTime DataOcorrida => throw new NotImplementedException();
+        public DateTime DataOcorreu => throw new NotImplementedException();
 
         public VendaConfirmada(int idCliente, int idObjeto, DateTime dataEntregaPrevista)
         {

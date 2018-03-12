@@ -2,7 +2,7 @@
 
 namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
 {
-    public class NotifyUsuarioAutenticado : IHandle<UsuarioAutenticado>
+    public class NotificarUsuarioAutenticado : IHandle<UsuarioAutenticado>
     {
         public void Handle(UsuarioAutenticado args)
         {

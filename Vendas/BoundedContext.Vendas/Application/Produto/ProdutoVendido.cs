@@ -7,6 +7,6 @@ namespace BoundedContext.Vendas.Application.Produto
     {
         public int VersaoEvento => throw new NotImplementedException();
 
-        public DateTime DataOcorrida => throw new NotImplementedException();
+        public DateTime DataOcorreu => throw new NotImplementedException();
     }
 }
