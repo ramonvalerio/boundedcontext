@@ -6,9 +6,9 @@
 
   <ItemGroup>
     <Folder Include="Domain.Model\Command\" />
+    <Folder Include="Domain.Model\Query\" />
     <Folder Include="Domain.Model\ReadModel\" />
     <Folder Include="Domain.Model\WriteModel\" />
-    <Folder Include="Domain.Model\Query\" />
   </ItemGroup>
 
   <ItemGroup>
