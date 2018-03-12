@@ -1,4 +1,5 @@
 ﻿using BoundedContext.NucleoCompartilhado.Domain.Model;
+using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 
 namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
 {
@@ -10,9 +11,9 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
 
         public string Senha { get; set; }
 
-        public Usuario()
+        public void Autenticar()
         {
-
+            DomainEvents.Raise(new UsuarioAutenticado() { Usuario = this });
         }
     }
 }

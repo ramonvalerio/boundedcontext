@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SimpleInjector" Version="4.0.12" />
+    <Compile Remove="Infrastructure\Service\**" />
+    <EmbeddedResource Remove="Infrastructure\Service\**" />
+    <None Remove="Infrastructure\Service\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infrastructure\Service\" />
+    <PackageReference Include="SimpleInjector" Version="4.0.12" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{7D262001-7096-4966-A7CD-66078E922F62}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.CQRS", "CQRS\BoundedContext.CQRS\BoundedContext.CQRS.csproj", "{07FEA799-752B-4A39-9490-D3A7310D019A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.NucleoCompartilhado", "NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj", "{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.ControleAcesso.Teste", "BoundedContext.ControleAcesso.Teste\BoundedContext.ControleAcesso.Teste.csproj", "{04E70BC8-CEDF-4AEB-A805-5362D23B4360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E70BC8-CEDF-4AEB-A805-5362D23B4360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E70BC8-CEDF-4AEB-A805-5362D23B4360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E70BC8-CEDF-4AEB-A805-5362D23B4360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E70BC8-CEDF-4AEB-A805-5362D23B4360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{7A79A194-508D-4176-B940-D2D5A1397503} = {BBD16CB6-A8DA-400F-9BD7-506B6FE54F93}
 		{07FEA799-752B-4A39-9490-D3A7310D019A} = {10844996-B2B2-4CE3-8DD1-54C03BB92F22}
 		{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14} = {728F28EB-F323-4AC2-9240-C56C7C6AB38F}
+		{04E70BC8-CEDF-4AEB-A805-5362D23B4360} = {931F9158-353D-4428-A06B-7A432359F8BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFCAE6C8-ED81-4107-B6D0-1645E0748109}
