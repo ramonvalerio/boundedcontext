@@ -7,14 +7,14 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
     {
         public Usuario Rebuild(Usuario aggregateRoot)
         {
-            aggregateRoot.Email = "foo@gmail.com";
+            aggregateRoot.Email = new Email("foo@gmail.com");
             return aggregateRoot;
         }
 
         public List<Usuario> RebuildAll(List<Usuario> aggregatesRoot)
         {
             for (int i = 0; i < aggregatesRoot.Count; i++)
-                aggregatesRoot[i].Email = $"foo{i}@gmail.com";
+                aggregatesRoot[i].Email = new Email($"foo{i}@gmail.com");
 
             return aggregatesRoot;
         }

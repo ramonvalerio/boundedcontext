@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ControleAcesso\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj" />
-    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
+    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
   </ItemGroup>
 
 </Project>

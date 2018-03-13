@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{7D262001-7096-4966-A7CD-66078E922F62}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Estoque", "Estoque", "{2295
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendas", "Vendas", "{BBD16CB6-A8DA-400F-9BD7-506B6FE54F93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NucleoCompartilhado", "NucleoCompartilhado", "{728F28EB-F323-4AC2-9240-C56C7C6AB38F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{728F28EB-F323-4AC2-9240-C56C7C6AB38F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.ControleAcesso", "ControleAcesso\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj", "{DF9773C4-5859-4F0C-9581-7814A2BB1206}"
 EndProject
@@ -25,9 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Vendas", "Ve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.CQRS", "CQRS\BoundedContext.CQRS\BoundedContext.CQRS.csproj", "{07FEA799-752B-4A39-9490-D3A7310D019A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.NucleoCompartilhado", "NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj", "{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Common", "NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj", "{2B0718DC-CE69-4CE0-9BE4-B4BD3836CF14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.ControleAcesso.Teste", "BoundedContext.ControleAcesso.Teste\BoundedContext.ControleAcesso.Teste.csproj", "{04E70BC8-CEDF-4AEB-A805-5362D23B4360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.ControleAcesso.Teste", "BoundedContext.ControleAcesso.Teste\BoundedContext.ControleAcesso.Teste.csproj", "{04E70BC8-CEDF-4AEB-A805-5362D23B4360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

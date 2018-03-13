@@ -18,7 +18,7 @@ namespace BoundedContext.ControleAcesso.Application
         {
             var usuarioFactory = new UsuarioFactory();
 
-            var usuario = usuarioFactory.Rebuild(new Usuario { Email = email, Senha = _criptografiaService.GetMD5Hash(senha) });
+            var usuario = usuarioFactory.Rebuild(new Usuario { Email = new Email(email), Senha = _criptografiaService.GetMD5Hash(senha) });
 
             _usuarioService.Cadastrar(usuario);
         }
