@@ -1,6 +1,6 @@
-﻿namespace BoundedContext.ControleAcesso.Application.Usuario
+﻿namespace BoundedContext.ControleAcesso.Application.Usuarios
 {
-    public class UsuarioViewModel
+    public class UsuarioDTO
     {
         public int Id { get; set; }
 

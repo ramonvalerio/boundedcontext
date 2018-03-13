@@ -2,15 +2,20 @@
 using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 using System;
 
-namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
+namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 {
     public class Usuario : AggregateRoot
     {
-        public int Id { get; set; }
+        public Guid Id { get; private set; }
 
         public string Email { get; set; }
 
         public string Senha { get; set; }
+
+        public Usuario()
+        {
+            Id = Guid.NewGuid();
+        }
 
         public void Autenticar()
         {
@@ -24,6 +29,14 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
             DomainEvents.Raise(new UsuarioCriado(usuario, DateTime.Now));
 
             return usuario;
+        }
+
+        public bool IsValid()
+        {
+            if (string.IsNullOrWhiteSpace(Email))
+                return false;
+
+            return true;
         }
     }
 }

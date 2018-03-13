@@ -1,6 +1,4 @@
-﻿using BoundedContext.ControleAcesso.Infrastructure.Repository;
-
-namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
+﻿namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 {
     public class UsuarioService
     {
@@ -9,6 +7,14 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
         public UsuarioService()
         {
             _usuarioRepository = new UsuarioRepository();
+        }
+
+        public void Cadastrar(Usuario usuario)
+        {
+            if (usuario.IsValid())
+            {
+                
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 
-namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
+namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 {
     public class NotificarUsuarioAutenticado : IHandle<UsuarioAutenticado>
     {

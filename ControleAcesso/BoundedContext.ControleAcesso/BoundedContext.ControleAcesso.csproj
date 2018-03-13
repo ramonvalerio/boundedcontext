@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Domain.Model\Usuario\UsuarioAutenticado.cs" />
+    <None Include="Domain.Model\Usuarios\UsuarioAutenticado.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using System;
 using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 
-namespace BoundedContext.ControleAcesso.Domain.Model.Usuario
+namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 {
     public class UsuarioCriado : IDomainEvent
     {

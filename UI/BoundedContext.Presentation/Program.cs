@@ -1,4 +1,4 @@
-﻿using BoundedContext.ControleAcesso.Domain.Model.Usuario;
+﻿using BoundedContext.ControleAcesso.Domain.Model.Usuarios;
 using BoundedContext.NucleoCompartilhado.Infrastructure.IoC;
 using System;
 
