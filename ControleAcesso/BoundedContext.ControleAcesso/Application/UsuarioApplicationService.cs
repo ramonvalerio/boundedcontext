@@ -1,7 +1,7 @@
 ﻿using BoundedContext.ControleAcesso.Domain.Model.Usuarios;
 using BoundedContext.ControleAcesso.Infrastructure.Services;
 
-namespace BoundedContext.ControleAcesso.Application.Usuarios
+namespace BoundedContext.ControleAcesso.Application
 {
     public class UsuarioApplicationService
     {

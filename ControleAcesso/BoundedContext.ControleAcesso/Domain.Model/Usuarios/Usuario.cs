@@ -8,7 +8,7 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
     {
         public Guid Id { get; private set; }
 
-        public string Email { get; set; }
+        public Email Email { get; set; }
 
         public string Senha { get; set; }
 
@@ -24,7 +24,7 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 
         public static Usuario Criar(string email)
         {
-            var usuario = new Usuario { Email = email };
+            var usuario = new Usuario { Email = new Email(email) };
 
             DomainEvents.Raise(new UsuarioCriado(usuario, DateTime.Now));
 
@@ -33,7 +33,10 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 
         public bool IsValid()
         {
-            if (string.IsNullOrWhiteSpace(Email))
+            if (!Email.IsValid())
+                return false;
+
+            if (string.IsNullOrWhiteSpace(Senha))
                 return false;
 
             return true;
