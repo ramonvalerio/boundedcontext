@@ -1,17 +1,33 @@
 ﻿using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
+using BoundedContext.NucleoCompartilhado.Infrastructure.Repository;
+using StructureMap;
 using System.Collections.Generic;
 
 namespace BoundedContext.NucleoCompartilhado.Infrastructure.IoC
 {
     public static class InjectorContainer
     {
-        private static SimpleInjector.Container _container;
+        private static Container _container;
 
         static InjectorContainer()
         {
-            _container = new SimpleInjector.Container();
+            _container = new Container();
+        }
 
-            //_container.Register<IDomainEvent, UsuarioAutenticado>();
+        public static void InitIoC()
+        {
+            _container.Configure(config =>
+            {
+                config.Scan(scan =>
+                {
+                    scan.TheCallingAssembly();
+                    scan.WithDefaultConventions();
+                    //scan.IncludeNamespaceContainingType<NotificarUsuarioCriado> // especificar namespace contendo um tipo localizado
+                    scan.ConnectImplementationsToTypesClosing(typeof(IHandle<>));
+                    scan.IncludeNamespace("DomainEventsConsole.Repositories");
+                    scan.ConnectImplementationsToTypesClosing(typeof(Repository<>));
+                });
+            });
         }
 
         public static IEnumerable<IHandle<T>> GetAllEvents<T>() where T : IDomainEvent
@@ -19,21 +35,9 @@ namespace BoundedContext.NucleoCompartilhado.Infrastructure.IoC
             return _container.GetAllInstances<IHandle<T>>();
         }
 
-        public static void RegisterServices()
+        public static void RegisterHandle<T>(T handle)
         {
-            //_container.Register(aggregateRoot);
-
-            //var repositoryAssembly = typeof(SqlUserRepository).Assembly;
-
-            //var registrations = from type in repositoryAssembly.GetExportedTypes()
-            //where type.Namespace == "MyComp.MyProd.BL.SqlRepositories"
-            //where type.GetInterfaces().Any()
-            //select new { Service = type.GetInterfaces().Single(), Implementation = type };
-
-            //foreach (var reg in registrations)
-            //{
-            //    container.Register(reg.Service, reg.Implementation, Lifestyle.Transient);
-            //}
+            //_container.Configure(x => x.AddRegistry<handle>());
         }
     }
 }

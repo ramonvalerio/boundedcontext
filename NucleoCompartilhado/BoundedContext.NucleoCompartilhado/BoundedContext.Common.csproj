@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Infrastructure\Service\**" />
+    <EmbeddedResource Remove="Infrastructure\Service\**" />
+    <None Remove="Infrastructure\Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StructureMap" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Notifications\" />
+  </ItemGroup>
+
+</Project>

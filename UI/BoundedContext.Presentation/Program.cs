@@ -1,5 +1,4 @@
-﻿using BoundedContext.ControleAcesso.Domain.Model.Usuario;
-using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
+﻿using BoundedContext.ControleAcesso.Domain.Model.Usuarios;
 using BoundedContext.NucleoCompartilhado.Infrastructure.IoC;
 using System;
 
@@ -9,18 +8,16 @@ namespace BoundedContext.Presentation
     {
         static void Main(string[] args)
         {
-            InjectorContainer.RegisterServices();
+            InjectorContainer.InitIoC();
 
-            // 1 - Criar Usuário
-            var usuario = new Usuario { Id = 1, Email = "ramonvalerios@gmail.com", Senha = "123456" };
+            Console.WriteLine("Antes do evento!");
 
-            // 2 - Criar Evento
-            var produtoCriado = new UsuarioAutenticado(usuario, DateTime.Now);
+            // Cria o usuário e dispara um evento printando o console com os dados do usuário
+            var usuario = Usuario.Criar("foo@gmail.com");
 
-            // 3 - Notificando o evento
-            DomainEvents.Raise(produtoCriado);
+            Console.WriteLine("Depois do evento!");
 
-            Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
 }

@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Domain.Model\Usuario\UsuarioAutenticado.cs" />
+    <None Include="Domain.Model\Usuarios\Events\UsuarioAutenticado.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
+    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,11 +5,11 @@ namespace BoundedContext.Estoque.Domain.Model.Produto
 {
     public class ProdutoQuantidadeAtualizada : IDomainEvent
     {
-        public DateTime DataOcorrida { get; private set; }
+        public DateTime DataOcorreu { get; private set; }
 
         public ProdutoQuantidadeAtualizada()
         {
-            DataOcorrida = new DateTime();
+            DataOcorreu = new DateTime();
         }
     }
 }

@@ -6,13 +6,12 @@
 
   <ItemGroup>
     <Folder Include="Domain.Model\Command\" />
-    <Folder Include="Domain.Model\ReadModel\" />
-    <Folder Include="Domain.Model\WriteModel\" />
     <Folder Include="Domain.Model\Query\" />
+    <Folder Include="Application\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.NucleoCompartilhado.csproj" />
+    <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ namespace BoundedContext.NucleoCompartilhado.Domain.Model.Events
 {
     public interface IDomainEvent
     {
-        DateTime DataOcorrida { get; }
+        //int VersaoEvento { get; set; }
+        DateTime DataOcorreu { get; }
     }
 }
