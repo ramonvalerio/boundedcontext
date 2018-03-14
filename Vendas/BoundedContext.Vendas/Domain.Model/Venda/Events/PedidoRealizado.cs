@@ -3,7 +3,7 @@ using System;
 
 namespace BoundedContext.Vendas.Domain.Events
 {
-    public class VendaConfirmada : IDomainEvent
+    public class PedidoRealizado : IDomainEvent
     {
         public int IdCliente { get; }
 
@@ -15,7 +15,7 @@ namespace BoundedContext.Vendas.Domain.Events
 
         public DateTime DataOcorreu => throw new NotImplementedException();
 
-        public VendaConfirmada(int idCliente, int idObjeto, DateTime dataEntregaPrevista)
+        public PedidoRealizado(int idCliente, int idObjeto, DateTime dataEntregaPrevista)
         {
             IdCliente = idCliente;
             IdObjeto = idObjeto;
