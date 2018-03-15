@@ -1,7 +1,7 @@
 ﻿using BoundedContext.NucleoCompartilhado.Domain.Model.Events;
 using System;
 
-namespace BoundedContext.Vendas.Domain.Model.Produto
+namespace BoundedContext.Vendas.Domain.Model.Produtos
 {
     public class ProdutoCriado : IDomainEvent
     {

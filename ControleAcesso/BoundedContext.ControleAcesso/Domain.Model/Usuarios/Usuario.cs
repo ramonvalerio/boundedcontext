@@ -6,16 +6,9 @@ namespace BoundedContext.ControleAcesso.Domain.Model.Usuarios
 {
     public class Usuario : AggregateRoot
     {
-        public Guid Id { get; private set; }
-
         public Email Email { get; set; }
 
         public string Senha { get; set; }
-
-        public Usuario()
-        {
-            Id = Guid.NewGuid();
-        }
 
         public void Autenticar()
         {

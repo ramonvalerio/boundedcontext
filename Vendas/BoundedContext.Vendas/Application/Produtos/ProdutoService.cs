@@ -1,4 +1,4 @@
-﻿namespace BoundedContext.Vendas.Application.Produto
+﻿namespace BoundedContext.Vendas.Application.Produtos
 {
     public class ProdutoService : IProdutoService
     {

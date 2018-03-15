@@ -6,16 +6,15 @@
 
   <ItemGroup>
     <Compile Remove="Infrastructure\Service\**" />
+    <Compile Remove="Notifications\**" />
     <EmbeddedResource Remove="Infrastructure\Service\**" />
+    <EmbeddedResource Remove="Notifications\**" />
     <None Remove="Infrastructure\Service\**" />
+    <None Remove="Notifications\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="StructureMap" Version="4.6.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Notifications\" />
   </ItemGroup>
 
 </Project>
