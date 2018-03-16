@@ -13,4 +13,8 @@
     <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\Produtos\" />
+  </ItemGroup>
+
 </Project>
