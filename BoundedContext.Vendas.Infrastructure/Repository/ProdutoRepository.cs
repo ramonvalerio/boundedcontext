@@ -1,5 +1,5 @@
 ﻿using BoundedContext.NucleoCompartilhado.Infrastructure.Repository;
-using BoundedContext.Vendas.Domain.Model.Produto;
+using BoundedContext.Vendas.Domain.Model.Produtos;
 
 namespace BoundedContext.Vendas.Repository
 {

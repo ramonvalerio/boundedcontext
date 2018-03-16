@@ -6,10 +6,15 @@
 
   <ItemGroup>
     <PackageReference Include="IronPython" Version="2.7.8.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Produtos\" />
   </ItemGroup>
 
 </Project>
