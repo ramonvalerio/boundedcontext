@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BoundedContext.Vendas.Application\BoundedContext.Vendas.Application.csproj" />
     <ProjectReference Include="..\..\ControleAcesso\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj" />
     <ProjectReference Include="..\..\CQRS\BoundedContext.CQRS\BoundedContext.CQRS.csproj" />
     <ProjectReference Include="..\..\NucleoCompartilhado\BoundedContext.NucleoCompartilhado\BoundedContext.Common.csproj" />
