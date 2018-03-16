@@ -1,6 +1,8 @@
-﻿namespace BoundedContext.Vendas.Domain.Model.Venda.Commands
+﻿using BoundedContext.Common.Domain.Model;
+
+namespace BoundedContext.Vendas.Domain.Model.Venda.Commands
 {
-    public class RealizarPedidoCommand
+    public class RealizarPedidoCommand : ICommand
     {
 
     }
