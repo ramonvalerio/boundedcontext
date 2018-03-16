@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BoundedContext.Vendas.Infrastructure\BoundedContext.Vendas.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\ControleAcesso\BoundedContext.ControleAcesso\BoundedContext.ControleAcesso.csproj" />
+    <ProjectReference Include="..\Estoque\BoundedContext.Estoque\BoundedContext.Estoque.csproj" />
+    <ProjectReference Include="..\Vendas\BoundedContext.Vendas\BoundedContext.Vendas.Domain.csproj" />
   </ItemGroup>
 
 </Project>
